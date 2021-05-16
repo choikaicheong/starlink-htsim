@@ -40,8 +40,8 @@ void Node::remove_link(Link& link) {
 double Node::distance(Node& dst, simtime_picosec time) {
     update_coordinates(time);
     dst.update_coordinates(time);
-    cout << "This Coordinates: " << _coordinates[0] << " " << _coordinates[1] << " " << _coordinates[2] << endl;
-    cout << "Dst Coordinates: " << dst.coordinates()[0] << " " << dst.coordinates()[1] << " " << dst.coordinates()[2] << endl;
+    //cout << "This Coordinates: " << _coordinates[0] << " " << _coordinates[1] << " " << _coordinates[2] << endl;
+    //cout << "Dst Coordinates: " << dst.coordinates()[0] << " " << dst.coordinates()[1] << " " << dst.coordinates()[2] << endl;
     double dist = (_coordinates - dst.coordinates()).norm();
     // cout << "time: " << timeAsMs(time) << " dist: " << dist << endl;
     return dist;
